@@ -160,14 +160,14 @@ const SignUpForm = ({
               value={signUpFormik.values.ref_code}
             />
           )}
-        {/*<CustomTextFieldWithFormik*/}
-        {/*  label={t("Refer Code (Optional)")}*/}
-        {/*  touched={signUpFormik.touched.ref_code}*/}
-        {/*  errors={signUpFormik.errors.ref_code}*/}
-        {/*  fieldProps={signUpFormik.getFieldProps("ref_code")}*/}
-        {/*  onChangeHandler={ReferCodeHandler}*/}
-        {/*  value={signUpFormik.values.ref_code}*/}
-        {/*/>*/}
+        <CustomTextFieldWithFormik
+         label={t("Refer Code (Optional)")}
+         touched={signUpFormik.touched.ref_code}
+         errors={signUpFormik.errors.ref_code}
+         fieldProps={signUpFormik.getFieldProps("ref_code")}
+         onChangeHandler={ReferCodeHandler}
+         value={signUpFormik.values.ref_code}
+        />
       </CustomStackFullWidth>
     </NoSsr>
   );
