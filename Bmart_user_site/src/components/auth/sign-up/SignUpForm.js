@@ -149,7 +149,7 @@ const SignUpForm = ({
             </InputAdornment>
           }
         />
-        {configData?.customer_wallet_status === 1 &&
+        {/* {configData?.customer_wallet_status === 1 &&
           configData?.ref_earning_status === 1 && (
             <CustomTextFieldWithFormik
               label={t("Refer Code (Optional)")}
@@ -159,7 +159,7 @@ const SignUpForm = ({
               onChangeHandler={ReferCodeHandler}
               value={signUpFormik.values.ref_code}
             />
-          )}
+          )} */}
         <CustomTextFieldWithFormik
          label={t("Refer Code (Optional)")}
          touched={signUpFormik.touched.ref_code}
