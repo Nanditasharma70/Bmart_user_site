@@ -1,7 +1,10 @@
 import axios from "axios";
-export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:8000';
 const MainApi = axios.create({
   baseURL: baseUrl,
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 MainApi.interceptors.request.use(function (config) {
   let zoneid = undefined;

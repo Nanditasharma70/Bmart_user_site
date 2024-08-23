@@ -1,6 +1,7 @@
 export const getToken = () => {
   if (typeof window !== "undefined") {
     return window.localStorage.getItem("token");
+    
   }
 };
 export const getGuestId = () => {
@@ -8,3 +9,6 @@ export const getGuestId = () => {
     return window.localStorage.getItem("guest_id");
   }
 };
+
+
+
